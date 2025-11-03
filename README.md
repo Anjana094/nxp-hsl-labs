@@ -12,11 +12,11 @@
 Design and build the foundation of a user-friendly dashboard for Licensed Providers to manage their supplement business.
 
 **This module demonstrates:**
-✔ Provider places wholesale product order  
-✔ Order saved to DB  
-✔ Inventory stock updated  
-✔ Event fired → Email generated (logged instead of sent)  
-✔ Clean architecture & test coverage
+- Provider places wholesale product order  
+- Order saved to DB  
+- Inventory stock updated  
+- Event fired → Email generated (logged instead of sent)  
+- Clean architecture & test coverage
 
 ## Installation & Setup Commands
 
@@ -123,14 +123,14 @@ routes/
 resources/views/emails/orders/confirmation.blade.php
 
 database/
- ├── migrations/
- ├── seeders/DatabaseSeeder.php
- └── factories/ProviderFactory.php
+ ── migrations/
+ ── seeders/DatabaseSeeder.php
+ ── factories/ProviderFactory.php
 
 tests/Feature/OrderFeatureTest.php
 
 
 ## Final Notes
-✔ Entire flow works without SMTP
-✔ Clean architecture (Controller → Service → Event → Mail)
-✔ Fully testable using Postman & PHPUnit
+- Entire flow works without SMTP
+- Clean architecture (Controller → Service → Event → Mail)
+- Fully testable using Postman & PHPUnit
