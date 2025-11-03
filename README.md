@@ -108,24 +108,25 @@ php artisan test
 
 ## Project Structure (Relevant to Feature)
 app/
- ├── Events/OrderPlaced.php
- ├── Listeners/SendOrderPlacedEmail.php
- ├── Mail/OrderConfirmationMail.php
- ├── Http/Controllers/Api/OrderController.php
- ├── Http/Requests/OrderStoreRequest.php
- ├── Services/OrderService.php
- ├── Policies/OrderPolicy.php
- ├── Models/{Provider, Order, Inventory}.php
+ - Events/OrderPlaced.php
+ - Listeners/SendOrderPlacedEmail.php
+ ─ Mail/OrderConfirmationMail.php
+ ─ Http/Controllers/Api/OrderController.php
+ ─ Http/Requests/OrderStoreRequest.php
+ ─ Services/OrderService.php
+ ─ Policies/OrderPolicy.php
+ ─ Models/{Provider, Order, Inventory}.php
 
 routes/
- └── api.php
+ - api.php
 
-resources/views/emails/orders/confirmation.blade.php
+resources/
+ - views/emails/orders/confirmation.blade.php
 
-database/
- ── migrations/
- ── seeders/DatabaseSeeder.php
- ── factories/ProviderFactory.php
+# database/
+ - migrations/
+ - seeders/DatabaseSeeder.php
+ - factories/ProviderFactory.php
 
 tests/Feature/OrderFeatureTest.php
 
