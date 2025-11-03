@@ -110,12 +110,12 @@ php artisan test
 app/
  - Events/OrderPlaced.php
  - Listeners/SendOrderPlacedEmail.php
- ─ Mail/OrderConfirmationMail.php
- ─ Http/Controllers/Api/OrderController.php
- ─ Http/Requests/OrderStoreRequest.php
- ─ Services/OrderService.php
- ─ Policies/OrderPolicy.php
- ─ Models/{Provider, Order, Inventory}.php
+ - Mail/OrderConfirmationMail.php
+ - Http/Controllers/Api/OrderController.php
+ - Http/Requests/OrderStoreRequest.php
+ - Services/OrderService.php
+ - Policies/OrderPolicy.php
+ - Models/{Provider, Order, Inventory}.php
 
 routes/
  - api.php
